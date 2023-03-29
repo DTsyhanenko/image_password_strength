@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/Compiled-CSS/css/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        script(src="https://cdn.tailwindcss.com")
+        title Password Strength Background
+    body
+        .background#background 
+        .bg-white.rouded.p-10.text-center.shadow-md
+            h1.text-3xl Image Password Strength 
+            p.text-sm.text-gray-700 Change the password to see the effect
+            .my-4.text-left
+                label.text-gray-900(for="email") Password
+                input#email.border.block.w-full.p-2.mt-2.rounded(type="text" placeholder="Enter Email")
+
+            .my-4.text-left
+                label.text-gray-900(for="password") Email
+                input#password.border.block.w-full.p-2.mt-2.rounded(type="password" placeholder="Enter Password")
+
+            button.bg-black.text-white.py-2.mt-4.inline-block.w-full.rounded(type="submit") Submit
+
+        script(src="/dist/index.js")
